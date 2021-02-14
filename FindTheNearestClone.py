@@ -1,7 +1,6 @@
 # This is a solution to the hackerrank question Find the nearest clone
 # currently i did not actually run or submit this, I just coded it up and never debugged it, still good practice
 
-
 # graph_nodes = int number of nodes
 # graph_from: an array of integers, the start nodes for each edge
 # graph_to: an array of integers, the end nodes for each edge
