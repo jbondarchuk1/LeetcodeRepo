@@ -9,4 +9,14 @@ def disappeared(nums):
             disappear.append(i)
     return disappear
 
-print(disappeared([1,1]))
+# print(disappeared([1,1]))
+
+# O(n) with o(1) space complexity
+def findDisappearedNumbers(self,nums):
+    ans = []
+    for i in range(len(nums)):
+        nums[abs(nums[i])-1] = -abs(nums[abs(nums[i])-1])
+    for i in range(len(nums)):
+        if nums[i] > 0:
+            ans.append(i+1)
+    return ans
