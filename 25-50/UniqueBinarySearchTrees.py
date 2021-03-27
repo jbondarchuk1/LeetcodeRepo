@@ -32,9 +32,10 @@ def numTrees(n):
         for j in range(i):
             table[i] +=  table[j] * table[i-1-j]
     return table[n]
-print(numTrees(3))
+# print(numTrees(3))
 
 
 # Catalan Number  (2n)!/((n+1)!*n!)  
 def numTrees(self, n):
     return math.factorial(2*n)/(math.factorial(n)*math.factorial(n+1))
+
