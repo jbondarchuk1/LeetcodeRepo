@@ -1,7 +1,7 @@
-base case and recursive case required
+# base case and recursive case required
 
-heres an example of a recursive function
--------
+# heres an example of a recursive function
+
 def factorial(n):
     # base case usually an if statement
     if n == 1 or n == 0:
@@ -9,14 +9,13 @@ def factorial(n):
     else:
         # call the same function for the recursive case
         return n*factorial(n-1)   
---------
-
+        
+"""
 combinations:
-O(2^n) time
-O(n^2) space
-collection of items where the order does not matter
-
---------
+    O(2^n) time
+    O(n^2) space
+    collection of items where the order does not matter
+"""
 def combo(arr):
     if len(arr) == 0:
         # we need a 2d array to pass back in
@@ -37,8 +36,8 @@ def combo(arr):
     return combsWithoutFirst + combsWithFirst
 
 print(combo(['a','b','c']))
----------
 
+"""
 permutations:
 n! number of permutations
 
@@ -47,7 +46,8 @@ collections of items where order matters
 
 time: O(n!)
 space: O(n^2)
----------
+"""
+
 def permu(arr):
     if len(arr) == 0:
         return [[]]
@@ -62,4 +62,3 @@ def permu(arr):
             perms.append([first]+element)
 
     return perms
----------
