@@ -30,6 +30,7 @@ def combo(arr):
         newComb = []
         for val in combination:
             newComb.append(val)
+
         newComb.append(first)
         combsWithFirst.append(newComb)
 
@@ -42,7 +43,6 @@ permutations:
 n! number of permutations
 
 collections of items where order matters
-
 
 time: O(n!)
 space: O(n^2)
@@ -62,3 +62,5 @@ def permu(arr):
             perms.append([first]+element)
 
     return perms
+
+print(permu(['a','b','c']))
