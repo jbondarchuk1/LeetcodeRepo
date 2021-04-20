@@ -3,7 +3,7 @@ def getSum(a, b):
     xoring = a^b
     anding = (a&b)<<1
     mask = 0xffffffff
-    while  anding&mask != 0:
+    while anding&mask != 0:
         temp =  (xoring&anding)<<1
         xoring = xoring^anding
         anding = temp
@@ -11,3 +11,4 @@ def getSum(a, b):
 
 
 print(getSum(-1,1))
+mask = 0xffffffff

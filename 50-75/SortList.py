@@ -15,45 +15,33 @@ def sortList(self, head: ListNode) -> ListNode:
         
     return newhead
 
-def sortList(head):
-    def quicksort(node,low=0,high=None):
-        if high == None:
-            pointer = node
-            high = low
-            while node:
-                high+=1
-                pointer = pointer.next
 
-        if not node.next:
-            return
-        if low < high:
-            parted = partition(node,low,high)
-            quicksort(node,low,parted-1)
-            quicksort(node,parted+1,high)
-
-    def partition(node,low,high):
-        i = low
-        pivot = node
-        for j in range(low,high):
-            pivot=node.next
-        
-        pointer = node
-        for j in range(low,high)
-            if pointer.val <= pivot.val:
-                temp = node.val
-                node.val = pointer.val
-                pointer.val = temp
-                node=node.next
-                i+=1
-            pointer=pointer.next
-
-        node = node.next
-        pointer = pointer.next
-        temp = node.val
-        node.val = pointer.val
-        pointer.val = temp
-
-        return i+1
-
-    quicksort(head)
-    return head
+##### review this! 
+# workin on it
+def sortList(self, head: ListNode) -> ListNode:
+    if not head or not head.next:
+        return head
+    fast, slow = head.next, head
+    while fast and fast.next:
+        fast = fast.next.next
+        slow = slow.next
+    start = slow.next
+    slow.next = None
+    l, r = self.sortList(head), self.sortList(start)
+    return self.merge(l, r)
+    
+    
+def merge(self, l, r):
+    if not l or not r:
+        return l or r
+    dummy = p = ListNode(0)
+    while l and r:
+        if l.val < r.val:
+            p.next = l
+            l = l.next
+        else:
+            p.next = r
+            r = r.next
+        p = p.next
+    p.next = l or r
+    return dummy.next
