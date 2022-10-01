@@ -1,0 +1,70 @@
+
+    classname = "ElectricalCustomerInstructions"
+    sheetname = "Electrical Customer Instructions"
+    title = "Electrical Customer Instructions"
+
+    # boldedOnlyLabel-boldedOnlyLabel-T-F-F-F|
+    # onlyLabel-onlyLabel-F-F-F-F|
+    # *regularCheck-regularCheck-F|  
+    # *boldCheck-boldCheck-T|  
+    # BoldData-BoldData-T-T-T-F|
+    # data-data-F-T-T-F|
+    # list-T|
+
+    # "  Name-Text-isBold-hasLine-hasData-isList  "         <= Naming Layout in fields string
+    # "  Name-isList  "                                     <= Shorthand naming in fields string
+    # "  *Name-Text-isBold  "                               <= Checks have an asterisk
+    # "  cafdc-Controller Armed For Capture-T-F-T-T  "      <= Example 1
+    # "  cafdc-T  "                                         <= Example 2
+    
+    fields0 = """
+        
+    
+    Note0-
+The information provided on these sheets will be used officially in the test\n
+report.\n
+If changes are made after the report has been released and a revision is\n
+needed, charges may be incurred.
+-F-F-F-F|
+
+    Note1-Instructions-F-F-F-F|
+
+    JobNo-Job No:-T-T-T-F|
+    Customer-Customer:-T-T-T-F|
+    Engineer-Engineer:-T-T-T-F|
+
+    Note2-Please fill out the following pages as quickly as possible so the report writer can start\n
+generating the report.    
+-F-F-F-F|
+    
+    
+    Note3-Who is the program manager from your company?-F-F-F-F|
+    Name0-Name: -F-T-T-F|
+    Email0-Email: -F-T-T-F|
+
+    Note4-If you are not the correct person to fill these out, please provide the name and email\n
+address of the correct person. (Must be within your company)   
+-F-F-F-F| 
+    Name1-Name: -F-T-T-F|
+    Email1-Email: -F-T-T-F|
+        
+    Note5-If you would prefer to receive an electronic copy of these pages, please provide name\n
+and email address:    
+-F-F-F-F|
+    Name2-Name: -F-T-T-F|
+    Email2-Email: -F-T-T-F|
+
+    Note6-
+There can be no blanks, please use N/A if something is not applicable.\n
+\n
+If information is provided in your procedure, no need to reqrite it. Reference the\n
+applicable paragraph no. instead.\n
+\n
+Return the pages to the report writer (with no blanks).\n
+\n
+Note: This information is the responsibility of the customer. If you are not sure\n
+what/how to fill out, please see your test Engineer\n
+-F-F-F-F|
+
+    """
+    

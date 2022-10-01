@@ -1,0 +1,23 @@
+    Note-ALL TEMPERATURES IN F-T-F-F-F
+
+    JobNo-JOB NO-T-T-T-F,
+    Date-DATE-T-T-T-F,
+    Test-TEST-T-T-T-F,
+
+    Time-T, 
+    FuelQty-T,
+    ChamberAltitude-T,
+    TC1ChamberAmbientTemp-T,
+    TC2EastWallTemp-T,
+    TC3WestWallTemp-T,
+    TC4UnitTemp-T,
+    TC5PlenumTemp-T,
+    Remarks-T, 
+    Tech-T,
+
+    Remarks-REMARKS-T-T-T-F
+    Engineer-ENGINEER-T-T-T-F, 
+
+    Note001-Dept 04 Standard Test Paperwork RELEASED 6 May 2021-T-F-F-F,
+    Note002-FILE NAME: Dept 04 Std Test Ppwk XX Fall 2021.xlsx-T-F-F-F,
+    Note003-SHEET: EXPL ATM LANDSCAPE-T-F-F-F

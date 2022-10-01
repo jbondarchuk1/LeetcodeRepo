@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./misc/LabFormGenerator/Generator Code/Main Generator",
+        "./misc/LabFormGenerator/Generator Code/Main Generator/BackEnd",
+        "./misc/LabFormGenerator/Generator Code/Main Generator/FrontEnd"
+    ]
+}

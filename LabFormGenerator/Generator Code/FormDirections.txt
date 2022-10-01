@@ -1,0 +1,58 @@
+Please focus on DTB.Lab.Forms
+    1. Create a Model. 
+        - Each form is a simple class based on the template. Only strings and boolean values in the class.
+    2. Create the Editor/Window. 
+        - Front end has design like the form. Backend connects front to database
+    3. Create Report
+
+    4. DTB.Lab.Forms.TestFormBroker Switch statement
+        - case "TSTARTCL": return new TestStartChecklistEditor(formData, isTablet);
+
+    5. mainwindow Switch statement
+        -   case "TSTARTCL":
+                var wTSTAR = new TestStartChecklistEditor(testForm);
+                wTSTAR.MdiParent = this;
+                wTSTAR.Show();
+                break;
+
+    6. DTB.Lab.Forms.ReportBroker Switch statement
+        -   case "TSTARTCL":
+                var wTSTAR = new TestStartChecklistEditor(testForm);
+                wTSTAR.load();
+                return wTSTAR.Export();
+                
+    7. Database SQL Insert info for a new lab form
+        - INSERT INTO dbo.Reference(
+                refTableID, refKey, refName, refValue, refFlags, refSortOrder, 
+                refActive, refCreatedBy, refCreatedDate, refModifiedBy, refModifiedDate, 
+                refParentID, refModelClass, refReportClass, refWindowClass
+            );
+
+
+What I need to do after generating the forms:
+    1. Model
+        - Change datatypes if needed. Some checkboxes are boolean values.
+        - Add Lists
+            - class for the list data: TestData, TestRequirements, etc.
+            - a public List<TestData> Data field
+        - remove unnecessary fields from the bottom most part of the field
+
+    2. Editor FrontEnd
+        - move data fields into their appropriate places, organize them, format
+        - change to checkboxes if needed
+        - insert datagrids 
+            - bind to model to auto populate data sections
+                - check the names to make them like the form
+            - with add and remove buttons for any list in the Model
+
+    3. Editor Backend
+        - uncomment the necessary sections
+        - change checkboxes from txt to chk and .EditValue to .Checked
+        - datagrids
+            - add and remove methods
+            - save and load the data
+        
+    4. Report FrontEnd
+        - move data fields into their appropriate places, organize them, format
+        - add in checkboxes where necessary
+        - manually add in the bound data to the detail section in the order as from the example

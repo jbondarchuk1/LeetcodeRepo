@@ -1,0 +1,43 @@
+
+    classname = "ElectricalOperationalCriteria"
+    sheetname = "Electrical Operational Criteria"
+    title = "Electrical Operational Criteria"
+
+    # boldedOnlyLabel-boldedOnlyLabel-T-F-F-F|
+    # onlyLabel-onlyLabel-F-F-F-F|
+    # *regularCheck-regularCheck-F|  
+    # *boldCheck-boldCheck-T|  
+    # BoldData-BoldData-T-T-T-F|
+    # data-data-F-T-T-F|
+    # list-T|
+
+    # "  Name-Text-isBold-hasLine-hasData-isList  "         <= Naming Layout in fields string
+    # "  Name-isList  "                                     <= Shorthand naming in fields string
+    # "  *Name-Text-isBold  "                               <= Checks have an asterisk
+    # "  cafdc-Controller Armed For Capture-T-F-T-T  "      <= Example 1
+    # "  cafdc-T  "                                         <= Example 2
+    
+    fields0 = """
+        
+    Note0-
+    The information provided on these sheets will be used officially in the test report.\n
+    If changes are made after the report has been released and a revision is needed,\n
+    charges may be incurred.
+-F-F-F-F|
+    Note1-is to supply this information-F-F-F-F|
+
+    JobNo-Job No:-T-T-T-F|
+    Engineer-Engineer:-T-T-T-F|
+    Customer-Customer:-T-T-T-F|
+
+    Note2-Mode of Operation (list all modes)-F-F-F-F|
+    Note3-All testing was performed with the EUT operating as follows:-F-F-F-F|
+    Operational-Operational:-T-T-T-F|
+
+    Note4-Susceptibility Criteria-F-F-F-F|
+    SusCrit-The EUT was monitored during the susceptibility testing for the following:-F-T-T-F|
+
+    Note5-Note: The information on this page was provided by the customer.-F-F-F-F|
+
+    """
+    

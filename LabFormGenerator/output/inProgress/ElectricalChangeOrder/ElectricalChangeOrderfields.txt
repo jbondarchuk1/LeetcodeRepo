@@ -1,0 +1,34 @@
+
+    classname = "ElectricalChangeOrder"
+    sheetname = "Electrical Change Order"
+    title = "Electrical Change Order"
+
+    # boldedOnlyLabel-boldedOnlyLabel-T-F-F-F|
+    # onlyLabel-onlyLabel-F-F-F-F|
+    # *regularCheck-regularCheck-F|  
+    # *boldCheck-boldCheck-T|  
+    # BoldData-BoldData-T-T-T-F|
+    # data-data-F-T-T-F|
+    # list-T|
+
+    # "  Name-Text-isBold-hasLine-hasData-isList  "         <= Naming Layout in fields string
+    # "  Name-isList  "                                     <= Shorthand naming in fields string
+    # "  *Name-Text-isBold  "                               <= Checks have an asterisk
+    # "  cafdc-Controller Armed For Capture-T-F-T-T  "      <= Example 1
+    # "  cafdc-T  "                                         <= Example 2
+    
+    fields0 = """
+        
+
+    JobNo-Job No:-T-T-T-F|
+    Customer-Customer:-T-T-T-F|
+    Engineer-Engineer:-T-T-T-F|
+
+    Date-T|
+    Test-T|
+    SubNo-T|
+    Duration-T|
+    DescriptionOfCharge-T|
+
+    """
+    

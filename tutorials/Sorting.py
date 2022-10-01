@@ -52,6 +52,9 @@ def partition(l,low,high):
     l[i+1],l[high] = l[high],l[i+1]
     return i+1
 
+arr2 = [74, 23, 48, 69, 50, 37, 76, 91]
+partition(arr2,0,3)
+print(arr2)
 arr = [10, 7, 8, 9, 1, 5]
 quicksort(arr)
 print(arr)

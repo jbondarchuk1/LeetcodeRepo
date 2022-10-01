@@ -1,0 +1,60 @@
+
+    classname = "ElectricalInputPowerCable"
+    sheetname = "Electrical Input Power Cable"
+    title = "Electrical Input Power Cable"
+
+    # boldedOnlyLabel-boldedOnlyLabel-T-F-F-F|
+    # onlyLabel-onlyLabel-F-F-F-F|
+    # *regularCheck-regularCheck-F|  
+    # *boldCheck-boldCheck-T|  
+    # BoldData-BoldData-T-T-T-F|
+    # data-data-F-T-T-F|
+    # list-T|
+
+    # "  Name-Text-isBold-hasLine-hasData-isList  "         <= Naming Layout in fields string
+    # "  Name-isList  "                                     <= Shorthand naming in fields string
+    # "  *Name-Text-isBold  "                               <= Checks have an asterisk
+    # "  cafdc-Controller Armed For Capture-T-F-T-T  "      <= Example 1
+    # "  cafdc-T  "                                         <= Example 2
+    
+    fields0 = """
+        
+    
+    Note0-
+The information provided on these sheets will be used officially in the test\n
+report.\n
+If changes are made after the report has been released and a revision is needed, charges may be incurred.    
+-F-F-F-F|
+
+    Note1-
+NOT for investigation or support equip.
+For EUT and/or EUT setup
+-F-F-F-F|
+
+    JobNo-Job No:-T-T-T-F|
+    Customer-Customer:-T-T-T-F|
+    Engineer-Engineer:-T-T-T-F|
+
+    Subtitle0-Input Power-F-F-F-F|
+    Voltage-Voltage: -F-T-T-F|
+    Frequency-Frequency: -F-T-T-F|
+    Phases-Phases: -F-T-T-F|
+    NoLeads-No. Leads: -F-T-T-F|
+
+    Note2-During testing, the input power was periodically monitored and maintained for the below condition: -F-F-F-F|
+
+    Subtitle1-Input Primary Power Cables-F-F-F-F|
+    CableLength-T|
+    CableAndDescription-T|
+    NominalCurrent-T|
+    Note3-(List all)-F-F-F-F|
+
+    Subtitle2-I/O Signal Cables-F-F-F-F|
+    CableLength-T|
+    CableAndDescription-T|
+    Note4-(List all)-F-F-F-F|
+    Note5-Note: The information on this page was provided by the customer.-F-F-F-F|
+
+
+    """
+    

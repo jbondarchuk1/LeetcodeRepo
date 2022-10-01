@@ -1,0 +1,34 @@
+
+    classname = "ElectricalSupportEquipmentDataSheet"
+    sheetname = "ElectricalSupportEquipmentDataSheet"
+    title = "ElectricalSupportEquipmentDataSheet".upper()
+
+    # "  Name-Text-isBold-hasLine-hasData-isList  "         <= Naming Layout in fields string
+    # "  Name-isList  "                                     <= Shorthand naming in fields string
+    # "  cafdc-Controller Armed For Capture-T-F-T-T  "      <= Example 1
+    # "  cafdc-T  "                                         <= Example 2
+    fields = """
+        
+        Note1-ALL TEMPERATURES IN DEGREES C-T-F-F-F,
+        Note2-Temperature Tolerance 2C-F-F-F-F,
+
+        JobNo-Job No:-T-T-T-F,
+        Test-Test:-T-T-T-F,
+        Date-Date:-T-T-T-F,
+
+        Time-T, 
+        TestTimeHours-T, 
+        ReqTemp-T, 
+        ActualTemp-T, 
+        ReqRH-T, 
+        ActRH-T, 
+        Remarks-T, 
+        Tech-T,
+
+        Engineer-ENGINEER-T-T-T-F, 
+
+        Note001-Dept 04 Standard Test Paperwork RELEASED 6 May 2021-T-F-F-F,
+        Note002-FILE NAME: Dept 04 Std Test Ppwk XX Fall 2021.xlsx-T-F-F-F,
+        Note003-SHEET: EXPL ATM LANDSCAPE-T-F-F-F
+    """.replace("\n", "").split(",")
+    

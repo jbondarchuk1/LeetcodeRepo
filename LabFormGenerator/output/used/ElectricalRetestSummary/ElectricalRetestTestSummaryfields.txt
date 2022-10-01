@@ -1,0 +1,72 @@
+
+    classname = "ElectricalRetestTestSummary"
+    sheetname = "Electrical Retest Test Summary"
+    title = "Electrical Retest Test Summary"
+
+    # boldedOnlyLabel-boldedOnlyLabel-T-F-F-F|
+    # onlyLabel-onlyLabel-F-F-F-F|
+    # *regularCheck-regularCheck-F|  
+    # *boldCheck-boldCheck-T|  
+    # BoldData-BoldData-T-T-T-F|
+    # data-data-F-T-T-F|
+    # list-T|
+
+    # "  Name-Text-isBold-hasLine-hasData-isList  "         <= Naming Layout in fields string
+    # "  Name-isList  "                                     <= Shorthand naming in fields string
+    # "  *Name-Text-isBold  "                               <= Checks have an asterisk
+    # "  cafdc-Controller Armed For Capture-T-F-T-T  "      <= Example 1
+    # "  cafdc-T  "                                         <= Example 2
+    
+    fields0 = """
+        
+
+    JobNo-Job No:-T-T-T-F|
+    Engineer-Engineer:-T-T-T-F|
+    Customer-Customer:-T-T-T-F|
+    Specification-Specification:-T-T-T-F|
+
+    Header-Retest(s)-T-F-F-F|
+    TestSum-TestSummary-T-F-F-F|
+    MetSpec-Met Spec.-T-F-F-F|
+
+    Test-T|
+    EngInit0-T|
+    TestStartDate-T|
+    TestCompDate-T|
+    TechInit-T|
+    EngInit1-T|
+    MetSpecYes-T|
+    MetSpecNo-T|
+
+    Note0-
+(1) Eng = Initialing states that you verified initial setup.\n
+(2) Tech = Initialing states that you generated the equipment list.\n
+(3) Eng = Initialing states that you checked equipment list is generated.\n
+*= Non standard method, no template on file, see engineer for references.
+-F-F-F-F|
+
+RE-RE-T-F-F-F|
+
+REEUT-EUT Boundary below 200 MHz-F-T-T-F|
+RELabel0-cm-F-F-F-F|
+
+REMHzToGHz-200 MHz to 1 GHz-F-T-T-F|
+RELabel1-cm-F-F-F-F|
+
+REAbove-Above 1 GHz-F-T-T-F|
+RELabel2-cm-F-F-F-F|
+
+
+RS-RS-T-F-F-F|
+RSEUT-EUT Boundary below 200 MHz-F-T-T-F|
+RSLabel0-cm-F-F-F-F|
+
+RSMHzToGHz-200 MHz to 1 GHz-F-T-T-F|
+RSLabel1-cm-F-F-F-F|
+
+RSAbove-Above 1 GHz-F-T-T-F|
+RSLabel2-cm-F-F-F-F|
+
+
+    """
+    

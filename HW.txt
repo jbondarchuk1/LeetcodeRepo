@@ -1,0 +1,16 @@
+secPerYear = 365*24*60*60 // total seconds in year
+birthRate = get User input (in seconds) // ex 7sec per birth
+deathRate = get User input (in seconds) 
+immigrationRate = get User input (in seconds)
+population = get User input or set to 312,032,543
+
+/* 
+    calculate population (births + immigrants - deaths)
+    set population to new population
+    print adjusted population
+    iterate for 5
+*/ 
+for 0 <= i <= 4:
+    population += secPerYear/birthRate + secPerYear/immigrationRate
+    population -= secPerYear/deathRate
+    print(population)
