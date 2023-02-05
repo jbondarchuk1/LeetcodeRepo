@@ -5,13 +5,13 @@ using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
-using static DTB.Lab.Forms.Models.ElectricalChangeOrder;
+using static DTB.Lab.Forms.Models.SaltFogSpray;
 
 namespace DTB.Lab.Forms.Reports
 {
-    public partial class ElectricalChangeOrderReport : DevExpress.XtraReports.UI.XtraReport, ILabReport
+    public partial class SaltFogSprayReport : DevExpress.XtraReports.UI.XtraReport, ILabReport
     {
-        public ElectricalChangeOrderReport(ElectricalChangeOrder data)
+        public SaltFogSprayReport(SaltFogSpray data)
         {
             InitializeComponent();
             objectDataSource1.DataSource = data;

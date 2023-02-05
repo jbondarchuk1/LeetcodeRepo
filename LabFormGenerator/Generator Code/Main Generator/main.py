@@ -7,8 +7,8 @@ import BackEnd.ReportStringGenerator
 import FrontEnd.EditorUIGenerator
 import FrontEnd.ReportUIGenerator
 
-classname = "ElectricalChangeOrder"
-sheetname = "Electrical Change Order"
+classname = "SaltFogSpray21FootChamber"
+sheetname = "Salt Fog Spray 21 Foot Chamber"
 title = sheetname
 
 # boldedOnlyLabel-boldedOnlyLabel-T-F-F-F|
@@ -27,14 +27,25 @@ title = sheetname
 fields0 = f"""
 
     JobNo-Job No:-T-T-T-F|
-    Customer-Customer:-T-T-T-F|
-    Engineer-Engineer:-T-T-T-F|
+    Date-Date-T-T-T-F|
 
-    Date-T|
-    Test-T|
-    SubNo-T|
-    Duration-T|
-    DescriptionOfCharge-T|
+    Time-T|
+    HoursIntoTest-T|
+    ChamberAmbientF-T|
+    AirPressPsi0-T|
+    AirPressPsi1-T|
+
+    TempF0-T|
+    TempF1-T|
+
+    Level0-T|    
+    Level1-T|
+    SaltResevoirLevel-T|
+    Tech-T|
+
+    Comments-Comments-T-T-T-F|
+    Engineer-Engineer-T-T-T-F|
+
 """
 
 fields = fields0.replace("\n", "").split("|")
@@ -175,6 +186,6 @@ def writeToPathDirect(classname, model, window, report, reportUI, windowUI, swit
     
     writeTxt()
 
-writeToPath(classname, mod, win, rep, repUI, winUI, sw)
+writeToPathDirect(classname, mod, win, rep, repUI, winUI, sw)
 
 

@@ -1,6 +1,6 @@
 namespace DTB.Lab.Forms.Reports
 {
-    partial class ElectricalChangeOrderReport
+    partial class SaltFogSpray21FootChamberReport
     {
         /// <summary>
         /// Required designer variable.
@@ -48,6 +48,9 @@ namespace DTB.Lab.Forms.Reports
 			this.xrLabel02 = new DevExpress.XtraReports.UI.XRLabel();
 			this.xrLine02 =  new DevExpress.XtraReports.UI.XRLine(); 
 			this.xrLabel23 = new DevExpress.XtraReports.UI.XRLabel();
+			this.xrLabel03 = new DevExpress.XtraReports.UI.XRLabel();
+			this.xrLine03 =  new DevExpress.XtraReports.UI.XRLine(); 
+			this.xrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
 
 
             this.objectDataSource1 = new DevExpress.DataAccess.ObjectBinding.ObjectDataSource(this.components);
@@ -101,7 +104,7 @@ namespace DTB.Lab.Forms.Reports
             this.xrLabel01.SizeF = new System.Drawing.SizeF(97.91653F, 25.08341F);
             this.xrLabel01.StylePriority.UseFont = false;
             this.xrLabel01.StylePriority.UseTextAlignment = false;
-            this.xrLabel01.Text = "Customer:";
+            this.xrLabel01.Text = "Date";
             this.xrLabel01.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
 
                 // 
@@ -115,7 +118,7 @@ namespace DTB.Lab.Forms.Reports
             // xrLabel22
             // 
             this.xrLabel22.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Customer]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Date]")});
             this.xrLabel22.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel22.LocationFloat = new DevExpress.Utils.PointFloat(135.7085F, 239.2499F);
             this.xrLabel22.Multiline = true;
@@ -136,7 +139,7 @@ namespace DTB.Lab.Forms.Reports
             this.xrLabel02.SizeF = new System.Drawing.SizeF(97.91653F, 25.08341F);
             this.xrLabel02.StylePriority.UseFont = false;
             this.xrLabel02.StylePriority.UseTextAlignment = false;
-            this.xrLabel02.Text = "Engineer:";
+            this.xrLabel02.Text = "Comments";
             this.xrLabel02.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
 
                 // 
@@ -150,7 +153,7 @@ namespace DTB.Lab.Forms.Reports
             // xrLabel23
             // 
             this.xrLabel23.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Engineer]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Comments]")});
             this.xrLabel23.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.xrLabel23.LocationFloat = new DevExpress.Utils.PointFloat(135.7085F, 284.2499F);
             this.xrLabel23.Multiline = true;
@@ -159,6 +162,41 @@ namespace DTB.Lab.Forms.Reports
             this.xrLabel23.SizeF = new System.Drawing.SizeF(155.8749F, 23.00001F);
             this.xrLabel23.StylePriority.UseFont = false;
             this.xrLabel23.Text = "xrLabel23";        
+
+            // 
+            // xrLabel03
+            // 
+            this.xrLabel03.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel03.LocationFloat = new DevExpress.Utils.PointFloat(36.79187F, 329.2499F);
+            this.xrLabel03.Multiline = true;
+            this.xrLabel03.Name = "xrLabel03";
+            this.xrLabel03.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel03.SizeF = new System.Drawing.SizeF(97.91653F, 25.08341F);
+            this.xrLabel03.StylePriority.UseFont = false;
+            this.xrLabel03.StylePriority.UseTextAlignment = false;
+            this.xrLabel03.Text = "Engineer";
+            this.xrLabel03.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+
+                // 
+                // xrLine03
+                // 
+                this.xrLine03.LocationFloat = new DevExpress.Utils.PointFloat(135.0835F, 354.2499F);
+                this.xrLine03.Name = "xrLine03";
+                this.xrLine03.SizeF = new System.Drawing.SizeF(156.4998F, 2.083328F);
+
+            // 
+            // xrLabel24
+            // 
+            this.xrLabel24.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Engineer]")});
+            this.xrLabel24.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.xrLabel24.LocationFloat = new DevExpress.Utils.PointFloat(135.7085F, 329.2499F);
+            this.xrLabel24.Multiline = true;
+            this.xrLabel24.Name = "xrLabel24";
+            this.xrLabel24.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel24.SizeF = new System.Drawing.SizeF(155.8749F, 23.00001F);
+            this.xrLabel24.StylePriority.UseFont = false;
+            this.xrLabel24.Text = "xrLabel24";        
 
             // 
             // TopMargin
@@ -207,9 +245,12 @@ namespace DTB.Lab.Forms.Reports
 			xrLabel02,
 			xrLine02,
 			xrLabel23,
+			xrLabel03,
+			xrLine03,
+			xrLabel24,
 
             });
-            this.ReportHeader.HeightF = 661.7499F;
+            this.ReportHeader.HeightF = 706.7499F;
             this.ReportHeader.Name = "ReportHeader";
             // 
             // xrLabel31
@@ -243,7 +284,7 @@ namespace DTB.Lab.Forms.Reports
             this.xrLabel32.SizeF = new System.Drawing.SizeF(243.7498F, 17.79168F);
             this.xrLabel32.StylePriority.UseFont = false;
             this.xrLabel32.StylePriority.UseTextAlignment = false;
-            this.xrLabel32.Text = "ELECTRICAL CHANGE ORDER";
+            this.xrLabel32.Text = "SALT FOG SPRAY 21 FOOT CHAMBER";
             this.xrLabel32.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // ReportFooter
@@ -253,10 +294,10 @@ namespace DTB.Lab.Forms.Reports
             // 
             // objectDataSource1
             // 
-            this.objectDataSource1.DataSource = typeof(DTB.Lab.Forms.Models.ElectricalChangeOrder);
+            this.objectDataSource1.DataSource = typeof(DTB.Lab.Forms.Models.SaltFogSpray21FootChamber);
             this.objectDataSource1.Name = "objectDataSource1";
             // 
-            // ElectricalChangeOrderReport
+            // SaltFogSpray21FootChamberReport
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
@@ -295,6 +336,9 @@ namespace DTB.Lab.Forms.Reports
 			private DevExpress.XtraReports.UI.XRLabel xrLabel02;
 			private DevExpress.XtraReports.UI.XRLine xrLine02;  
 			private DevExpress.XtraReports.UI.XRLabel xrLabel23;
+			private DevExpress.XtraReports.UI.XRLabel xrLabel03;
+			private DevExpress.XtraReports.UI.XRLine xrLine03;  
+			private DevExpress.XtraReports.UI.XRLabel xrLabel24;
 
     }
 }

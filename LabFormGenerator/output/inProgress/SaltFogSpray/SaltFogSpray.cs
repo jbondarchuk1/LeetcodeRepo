@@ -11,17 +11,21 @@ using System.Threading.Tasks;
 
 namespace DTB.Lab.Forms.Models
 {
-    public class ElectricalChangeOrder : ModelBase, ILabModel
+    public class SaltFogSpray : ModelBase, ILabModel
     {
         
 		public string JobNo { get; set; } = "";
-		public string Customer { get; set; } = "";
-		public string Engineer { get; set; } = "";
 		public string Date { get; set; } = "";
-		public string Test { get; set; } = "";
-		public string SubNo { get; set; } = "";
-		public string Duration { get; set; } = "";
-		public string DescriptionOfCharge { get; set; } = "";
+		public string Time { get; set; } = "";
+		public string HoursIntoTest { get; set; } = "";
+		public string ChamberAmbientF { get; set; } = "";
+		public string AirPressPsi { get; set; } = "";
+		public string TempF { get; set; } = "";
+		public string Level { get; set; } = "";
+		public string SaltResevoirLevel { get; set; } = "";
+		public string Tech { get; set; } = "";
+		public string Comments { get; set; } = "";
+		public string Engineer { get; set; } = "";
 
 
         // public List<TestData> Data { get; set; } = new List<TestData>();
@@ -29,20 +33,20 @@ namespace DTB.Lab.Forms.Models
 
         public string FormVersion { get; set; } = "";
 
-        public static ElectricalChangeOrder Load(string json)
+        public static SaltFogSpray Load(string json)
         {
-            if (!json.IsValid()) return new ElectricalChangeOrder();
-            return JsonConvert.DeserializeObject<ElectricalChangeOrder>(json);
+            if (!json.IsValid()) return new SaltFogSpray();
+            return JsonConvert.DeserializeObject<SaltFogSpray>(json);
         }
 
-        public static ElectricalChangeOrder Load(TestForm t)
+        public static SaltFogSpray Load(TestForm t)
         {
 
             if (!t.Content.IsValid())
             {
                 // Create using Parent LabTest
                 LabTest lt = LabTest.Get(t.TestID);
-                return new ElectricalChangeOrder(t,lt);
+                return new SaltFogSpray(t,lt);
             }
 
             else
@@ -52,7 +56,7 @@ namespace DTB.Lab.Forms.Models
         }
 
         // convert instance to json
-        public static string Save(ElectricalChangeOrder obj)
+        public static string Save(SaltFogSpray obj)
         {
             return JsonConvert.SerializeObject(obj);
         }
@@ -62,19 +66,18 @@ namespace DTB.Lab.Forms.Models
         // Instance Method
         public string Save()
         {
-            return ElectricalChangeOrder.Save(this);
+            return SaltFogSpray.Save(this);
         }
 
-        public ElectricalChangeOrder() {}
+        public SaltFogSpray() {}
 
-        public ElectricalChangeOrder(TestForm tf, LabTest t)
+        public SaltFogSpray(TestForm tf, LabTest t)
         {
             // DateTime.Today.Date.ToString("MM/dd/yyyy");
             
 			this.JobNo = t.JobNumber;
-			this.Customer = t.Customer;
-			this.Engineer = t.Engineer;
 			this.Date = DateTime.Today.Date.ToString("MM/dd/yyyy");
+			this.Engineer = t.Engineer;
             this.FormVersion = GetReportVersion(tf);
 
         }

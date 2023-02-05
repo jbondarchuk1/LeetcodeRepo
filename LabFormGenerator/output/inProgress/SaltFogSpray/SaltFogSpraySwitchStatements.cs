@@ -1,17 +1,17 @@
 // Report Broker Switch Statement 
 
-case "ECO":
-    var wECO = new ElectricalChangeOrderEditor(testForm);
-    wECO.load();
-    return wECO.Export();
+case "SFS":
+    var wSFS = new SaltFogSprayEditor(testForm);
+    wSFS.load();
+    return wSFS.Export();
 // Test Form Broker Switch Statement 
-case "ECO": return new ElectricalChangeOrderEditor(formData, isTablet);
+case "SFS": return new SaltFogSprayEditor(formData, isTablet);
 
 // mainwindow Switch statement
-case "ECO":
-    var wECO = new ElectricalChangeOrderEditor(testForm);
-    wECO.MdiParent = this;
-    wECO.Show();
+case "SFS":
+    var wSFS = new SaltFogSprayEditor(testForm);
+    wSFS.MdiParent = this;
+    wSFS.Show();
     break;
 
 /* NOT A C# STATEMENT, Add this test form to the database
@@ -23,9 +23,9 @@ INSERT INTO dbo.Reference(
     refModifiedDate, refParentID, refModelClass, refReportClass, refWindowClass
     ) 
     VALUES (
-        3, 'ECO', 'Electrical Change Order', 'F2022.08.06', 0, 0, 
+        3, 'SFS', 'Salt Fog Spray', 'F2022.08.06', 0, 0, 
         1, 'TCSDEV1\Jason', GETDATE(), 'TCSDEV1\Jason',
-        GETDATE(), 0, 'ElectricalChangeOrder', 'ElectricalChangeOrderReport', 'ElectricalChangeOrderEditor'
+        GETDATE(), 0, 'SaltFogSpray', 'SaltFogSprayReport', 'SaltFogSprayEditor'
     );
 
 

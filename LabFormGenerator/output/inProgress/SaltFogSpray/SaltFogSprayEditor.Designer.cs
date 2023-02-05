@@ -3,7 +3,7 @@
 
 namespace DTB.Lab.Forms.Windows
 {
-    partial class ElectricalChangeOrderEditor
+    partial class SaltFogSprayEditor
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace DTB.Lab.Forms.Windows
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ElectricalChangeOrderEditor));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SaltFogSprayEditor));
             this.btnSaveClose = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
@@ -43,22 +43,28 @@ namespace DTB.Lab.Forms.Windows
             			((System.ComponentModel.ISupportInitialize)(this.lblJobNo)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.separatorControl20)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtJobNo.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.lblCustomer)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.lblDate)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.separatorControl21)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtCustomer.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.lblEngineer)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtDate.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.lblComments)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.separatorControl22)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtComments.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.lblEngineer)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.separatorControl23)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtEngineer.Properties)).BeginInit();
 
             this.SuspendLayout();
             			this.lblJobNo = new DevExpress.XtraEditors.LabelControl();
 			this.separatorControl20 = new DevExpress.XtraEditors.SeparatorControl();
 			this.txtJobNo = new DevExpress.XtraEditors.TextEdit();
-			this.lblCustomer = new DevExpress.XtraEditors.LabelControl();
+			this.lblDate = new DevExpress.XtraEditors.LabelControl();
 			this.separatorControl21 = new DevExpress.XtraEditors.SeparatorControl();
-			this.txtCustomer = new DevExpress.XtraEditors.TextEdit();
-			this.lblEngineer = new DevExpress.XtraEditors.LabelControl();
+			this.txtDate = new DevExpress.XtraEditors.TextEdit();
+			this.lblComments = new DevExpress.XtraEditors.LabelControl();
 			this.separatorControl22 = new DevExpress.XtraEditors.SeparatorControl();
+			this.txtComments = new DevExpress.XtraEditors.TextEdit();
+			this.lblEngineer = new DevExpress.XtraEditors.LabelControl();
+			this.separatorControl23 = new DevExpress.XtraEditors.SeparatorControl();
 			this.txtEngineer = new DevExpress.XtraEditors.TextEdit();
 
             
@@ -96,15 +102,15 @@ namespace DTB.Lab.Forms.Windows
             this.txtJobNo.Size = new System.Drawing.Size(313, 22);
 
             // 
-            // lblCustomer
+            // lblDate
             // 
-            this.lblCustomer.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomer.Appearance.Options.UseFont = true;
-            this.lblCustomer.Location = new System.Drawing.Point(28, 300);
-            this.lblCustomer.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.lblCustomer.Name = "lblCustomer";
-            this.lblCustomer.Size = new System.Drawing.Size(82, 18);
-            this.lblCustomer.Text = "Customer:";       
+            this.lblDate.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Appearance.Options.UseFont = true;
+            this.lblDate.Location = new System.Drawing.Point(28, 300);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(82, 18);
+            this.lblDate.Text = "Date";       
 
             // 
             // separatorControl21
@@ -115,29 +121,29 @@ namespace DTB.Lab.Forms.Windows
             this.separatorControl21.Size = new System.Drawing.Size(336, 20);
 
             // 
-            // txtCustomer
+            // txtDate
             // 
-            this.txtCustomer.EditValue = "";
-            this.txtCustomer.Location = new System.Drawing.Point(126, 293);
-            this.txtCustomer.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.txtCustomer.Name = "txtCustomer";
-            this.txtCustomer.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtCustomer.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCustomer.Properties.Appearance.Options.UseBackColor = true;
-            this.txtCustomer.Properties.Appearance.Options.UseFont = true;
-            this.txtCustomer.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.txtCustomer.Size = new System.Drawing.Size(313, 22);
+            this.txtDate.EditValue = "";
+            this.txtDate.Location = new System.Drawing.Point(126, 293);
+            this.txtDate.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtDate.Name = "txtDate";
+            this.txtDate.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtDate.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDate.Properties.Appearance.Options.UseBackColor = true;
+            this.txtDate.Properties.Appearance.Options.UseFont = true;
+            this.txtDate.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtDate.Size = new System.Drawing.Size(313, 22);
 
             // 
-            // lblEngineer
+            // lblComments
             // 
-            this.lblEngineer.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEngineer.Appearance.Options.UseFont = true;
-            this.lblEngineer.Location = new System.Drawing.Point(28, 345);
-            this.lblEngineer.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.lblEngineer.Name = "lblEngineer";
-            this.lblEngineer.Size = new System.Drawing.Size(82, 18);
-            this.lblEngineer.Text = "Engineer:";       
+            this.lblComments.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComments.Appearance.Options.UseFont = true;
+            this.lblComments.Location = new System.Drawing.Point(28, 345);
+            this.lblComments.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.lblComments.Name = "lblComments";
+            this.lblComments.Size = new System.Drawing.Size(82, 18);
+            this.lblComments.Text = "Comments";       
 
             // 
             // separatorControl22
@@ -148,10 +154,43 @@ namespace DTB.Lab.Forms.Windows
             this.separatorControl22.Size = new System.Drawing.Size(336, 20);
 
             // 
+            // txtComments
+            // 
+            this.txtComments.EditValue = "";
+            this.txtComments.Location = new System.Drawing.Point(126, 338);
+            this.txtComments.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtComments.Name = "txtComments";
+            this.txtComments.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtComments.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComments.Properties.Appearance.Options.UseBackColor = true;
+            this.txtComments.Properties.Appearance.Options.UseFont = true;
+            this.txtComments.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.txtComments.Size = new System.Drawing.Size(313, 22);
+
+            // 
+            // lblEngineer
+            // 
+            this.lblEngineer.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEngineer.Appearance.Options.UseFont = true;
+            this.lblEngineer.Location = new System.Drawing.Point(28, 390);
+            this.lblEngineer.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.lblEngineer.Name = "lblEngineer";
+            this.lblEngineer.Size = new System.Drawing.Size(82, 18);
+            this.lblEngineer.Text = "Engineer";       
+
+            // 
+            // separatorControl23
+            // 
+            this.separatorControl23.Location = new System.Drawing.Point(112, 400);
+            this.separatorControl23.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.separatorControl23.Name = "separatorControl23";
+            this.separatorControl23.Size = new System.Drawing.Size(336, 20);
+
+            // 
             // txtEngineer
             // 
             this.txtEngineer.EditValue = "";
-            this.txtEngineer.Location = new System.Drawing.Point(126, 338);
+            this.txtEngineer.Location = new System.Drawing.Point(126, 383);
             this.txtEngineer.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtEngineer.Name = "txtEngineer";
             this.txtEngineer.Properties.Appearance.BackColor = System.Drawing.Color.Gainsboro;
@@ -200,11 +239,14 @@ namespace DTB.Lab.Forms.Windows
             			this.xtraScrollableControl1.Controls.Add(this.lblJobNo);
 			this.xtraScrollableControl1.Controls.Add(this.separatorControl20);
 			this.xtraScrollableControl1.Controls.Add(this.txtJobNo);
-			this.xtraScrollableControl1.Controls.Add(this.lblCustomer);
+			this.xtraScrollableControl1.Controls.Add(this.lblDate);
 			this.xtraScrollableControl1.Controls.Add(this.separatorControl21);
-			this.xtraScrollableControl1.Controls.Add(this.txtCustomer);
-			this.xtraScrollableControl1.Controls.Add(this.lblEngineer);
+			this.xtraScrollableControl1.Controls.Add(this.txtDate);
+			this.xtraScrollableControl1.Controls.Add(this.lblComments);
 			this.xtraScrollableControl1.Controls.Add(this.separatorControl22);
+			this.xtraScrollableControl1.Controls.Add(this.txtComments);
+			this.xtraScrollableControl1.Controls.Add(this.lblEngineer);
+			this.xtraScrollableControl1.Controls.Add(this.separatorControl23);
 			this.xtraScrollableControl1.Controls.Add(this.txtEngineer);
 
             this.xtraScrollableControl1.InvertTouchScroll = true;
@@ -247,11 +289,11 @@ namespace DTB.Lab.Forms.Windows
             this.lblSubtitle.Name = "lblSubtitle";
             this.lblSubtitle.Size = new System.Drawing.Size(104, 17);
             this.lblSubtitle.TabIndex = 0;
-            this.lblSubtitle.Text = "ELECTRICAL CHANGE ORDER";
+            this.lblSubtitle.Text = "SALT FOG SPRAY";
             // 
-            // ElectricalChangeOrderEditor
+            // SaltFogSprayEditor
             // 
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ElectricalChangeOrderEditor_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SaltFogSprayEditor_FormClosing);
             this.Appearance.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -261,20 +303,23 @@ namespace DTB.Lab.Forms.Windows
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.xtraScrollableControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ElectricalChangeOrderEditor";
-            this.Text = "Electrical Change Order Editor";
-            this.Load += new System.EventHandler(this.ElectricalChangeOrderEditor_Load);
+            this.Name = "SaltFogSprayEditor";
+            this.Text = "Salt Fog Spray Editor";
+            this.Load += new System.EventHandler(this.SaltFogSprayEditor_Load);
             this.xtraScrollableControl1.ResumeLayout(false);
             this.xtraScrollableControl1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             			((System.ComponentModel.ISupportInitialize)(this.lblJobNo)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.separatorControl20)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtJobNo).Properties).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.lblCustomer)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.lblDate)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.separatorControl21)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtCustomer).Properties).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.lblEngineer)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtDate).Properties).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.lblComments)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.separatorControl22)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtComments).Properties).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.lblEngineer)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.separatorControl23)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtEngineer).Properties).EndInit();
 
             this.ResumeLayout(false);
@@ -291,11 +336,14 @@ namespace DTB.Lab.Forms.Windows
         			private DevExpress.XtraEditors.LabelControl lblJobNo;
 			private DevExpress.XtraEditors.SeparatorControl separatorControl20;
 			private DevExpress.XtraEditors.TextEdit txtJobNo;
-			private DevExpress.XtraEditors.LabelControl lblCustomer;
+			private DevExpress.XtraEditors.LabelControl lblDate;
 			private DevExpress.XtraEditors.SeparatorControl separatorControl21;
-			private DevExpress.XtraEditors.TextEdit txtCustomer;
-			private DevExpress.XtraEditors.LabelControl lblEngineer;
+			private DevExpress.XtraEditors.TextEdit txtDate;
+			private DevExpress.XtraEditors.LabelControl lblComments;
 			private DevExpress.XtraEditors.SeparatorControl separatorControl22;
+			private DevExpress.XtraEditors.TextEdit txtComments;
+			private DevExpress.XtraEditors.LabelControl lblEngineer;
+			private DevExpress.XtraEditors.SeparatorControl separatorControl23;
 			private DevExpress.XtraEditors.TextEdit txtEngineer;
 
     }

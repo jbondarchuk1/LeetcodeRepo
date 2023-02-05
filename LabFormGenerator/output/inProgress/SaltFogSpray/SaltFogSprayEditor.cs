@@ -9,26 +9,26 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
-using static DTB.Lab.Forms.Models.ElectricalChangeOrder;
+using static DTB.Lab.Forms.Models.SaltFogSpray;
 using DevExpress.XtraGrid.Views.Grid;
 
 namespace DTB.Lab.Forms.Windows
 {
-    public partial class ElectricalChangeOrderEditor : DevExpress.XtraEditors.XtraForm, ILabForm, ILabWindow
+    public partial class SaltFogSprayEditor : DevExpress.XtraEditors.XtraForm, ILabForm, ILabWindow
     {
         public TestForm LabTestForm { get; set; } = null;
-        public ElectricalChangeOrder el { get; set; } = null;
+        public SaltFogSpray el { get; set; } = null;
         public bool isTablet { get; set; } = false;
 
         private string _initialContent;
         private string _currentContent;
 
-        public ElectricalChangeOrderEditor()
+        public SaltFogSprayEditor()
         {
             InitializeComponent();
         }
 
-        public ElectricalChangeOrderEditor(TestForm f, bool isTab = false) : this()
+        public SaltFogSprayEditor(TestForm f, bool isTab = false) : this()
         {
             this.LabTestForm = f;
             this.isTablet = isTab;
@@ -43,13 +43,13 @@ namespace DTB.Lab.Forms.Windows
                 // all text edits need to be resized on mobile
                 List<TextEdit> textEdits = new List<TextEdit>()
                 {
-                    txtJobNo, txtCustomer, txtEngineer, 
+                    txtJobNo, txtDate, txtComments, txtEngineer, 
                 };
 
                 // all labels that have bold, underline, or italics need to be resized on mobile
                 List<LabelControl> labelControls = new List<LabelControl>()
                 {
-                    lblJobNo, lblCustomer, lblEngineer, 
+                    lblJobNo, lblDate, lblComments, lblEngineer, 
                 };
 
                 foreach (TextEdit t in textEdits)
@@ -84,15 +84,16 @@ namespace DTB.Lab.Forms.Windows
         public void load()
         {
             FormTools.FormatForm(this);
-            this.el = ElectricalChangeOrder.Load(this.LabTestForm);
+            this.el = SaltFogSpray.Load(this.LabTestForm);
 			txtJobNo.EditValue = this.el.JobNo;
-			txtCustomer.EditValue = this.el.Customer;
+			txtDate.EditValue = this.el.Date;
+			txtComments.EditValue = this.el.Comments;
 			txtEngineer.EditValue = this.el.Engineer;
 
 
             // grdTestData.DataSource = this.el.Data;
 
-            _initialContent = ElectricalChangeOrder.Save(this.el);
+            _initialContent = SaltFogSpray.Save(this.el);
         }
 
         public void Save()
@@ -105,23 +106,24 @@ namespace DTB.Lab.Forms.Windows
             // this.el.Data = (List<TestData>)grdTestData.DataSource;
 
 			this.el.JobNo = txtJobNo.EditValue.ToString();
-			this.el.Customer = txtCustomer.EditValue.ToString();
+			this.el.Date = txtDate.EditValue.ToString();
+			this.el.Comments = txtComments.EditValue.ToString();
 			this.el.Engineer = txtEngineer.EditValue.ToString();
 
 
-            FormTools.SaveForm<ElectricalChangeOrder, ElectricalChangeOrderEditor>(el, this, ref _initialContent, ref _currentContent, in checkUser);
+            FormTools.SaveForm<SaltFogSpray, SaltFogSprayEditor>(el, this, ref _initialContent, ref _currentContent, in checkUser);
         }
 
 
 
         public XtraReport Export()
         {
-            return new ElectricalChangeOrderReport(this.el);
+            return new SaltFogSprayReport(this.el);
         }
 
         private void add(GridControl grdControl, GridView grdView)
         {
-            // this.el.Data.Add(new ElectricalChangeOrder.TestData());
+            // this.el.Data.Add(new SaltFogSpray.TestData());
             // grdView.FocusedRowHandle = grdView.RowCount - 1;
             // grdControl.RefreshDataSource();
         }
@@ -157,7 +159,7 @@ namespace DTB.Lab.Forms.Windows
             this.Close();
         }
 
-        private void ElectricalChangeOrderEditor_Load(object sender, EventArgs e)
+        private void SaltFogSprayEditor_Load(object sender, EventArgs e)
         {
             try
             {
@@ -194,7 +196,7 @@ namespace DTB.Lab.Forms.Windows
             //}
         //}
 
-        private void ElectricalChangeOrderEditor_FormClosing(object sender, FormClosingEventArgs e)
+        private void SaltFogSprayEditor_FormClosing(object sender, FormClosingEventArgs e)
         {
             try
             {

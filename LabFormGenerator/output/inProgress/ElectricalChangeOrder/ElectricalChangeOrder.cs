@@ -17,8 +17,7 @@ namespace DTB.Lab.Forms.Models
 		public string JobNo { get; set; } = "";
 		public string Customer { get; set; } = "";
 		public string Engineer { get; set; } = "";
-		
-        public string Date { get; set; } = "";
+		public string Date { get; set; } = "";
 		public string Test { get; set; } = "";
 		public string SubNo { get; set; } = "";
 		public string Duration { get; set; } = "";

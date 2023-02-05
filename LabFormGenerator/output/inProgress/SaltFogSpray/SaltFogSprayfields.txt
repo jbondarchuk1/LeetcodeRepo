@@ -1,7 +1,7 @@
 
-    classname = "ElectricalChangeOrder"
-    sheetname = "Electrical Change Order"
-    title = "Electrical Change Order"
+    classname = "SaltFogSpray"
+    sheetname = "Salt Fog Spray"
+    title = "Salt Fog Spray"
 
     # boldedOnlyLabel-boldedOnlyLabel-T-F-F-F|
     # onlyLabel-onlyLabel-F-F-F-F|
@@ -21,14 +21,20 @@
         
 
     JobNo-Job No:-T-T-T-F|
-    Customer-Customer:-T-T-T-F|
-    Engineer-Engineer:-T-T-T-F|
+    Date-Date-T-T-T-F|
 
-    Date-T|
-    Test-T|
-    SubNo-T|
-    Duration-T|
-    DescriptionOfCharge-T|
+    Time-T|
+    HoursIntoTest-T|
+    ChamberAmbientF-T|
+    AirPressPsi-T|
+    TempF-T|
+    Level-T|
+    SaltResevoirLevel-T|
+    Tech-T|
+
+    Comments-Comments-T-T-T-F|
+    Engineer-Engineer-T-T-T-F|
+
 
     """
     
