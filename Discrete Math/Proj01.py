@@ -17,7 +17,10 @@ class Statement:
     
     def parseStatement(self):
         words = self.stringStatement.strip().split(" ")
-        if words.find("is"):
-            isIdx = words.index("is")
+        if (words[0] == "If" or words[0] == "if"):
+            
+
+        for i in range(len(words)):
+            if ()
             
 
